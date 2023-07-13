@@ -45,8 +45,9 @@ function FrontCards() {
                     <Image
                       src={item.image[0]}
                       alt={item.name}
-                      fill
-                      className="object-contain bg-gray-100 rounded-lg aspect-square"
+                      height={1000}
+                      width={1000}
+                      className="object-contain bg-gray-100 rounded-lg min-h-[350px]"
                     />
                   </div>
                   <div className="flex flex-col w-full my-4 text-clip">
