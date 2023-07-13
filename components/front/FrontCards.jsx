@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import { db } from "@/firebase/config";
-import { collection , getDocs} from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -40,7 +40,7 @@ function FrontCards() {
           {product.slice(0, 4).map((item) => {
             return (
               <Link href="/product">
-                <div className="h-[350px] mt-3 md:mt-0 md:h-[500px] w-[230px] md:w-[310px] flex flex-col items-center ">
+                <div className="h-[400px] mt-3 md:mt-0 md:h-[500px] w-[300px] md:w-[310px] flex flex-col items-center ">
                   <div className="relative w-full rounded-lg h-1/2 ">
                     <Image
                       src={item.image[0]}
