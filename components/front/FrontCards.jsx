@@ -40,7 +40,7 @@ function FrontCards() {
           {product.slice(0, 4).map((item) => {
             return (
               <Link href="/product" key={item}>
-                <div className="h-[400px] mt-3 md:mt-0 md:h-[500px] w-[300px] md:w-[310px] flex flex-col items-center ">
+                <div className="min-h-[400px] mt-3 md:mt-0 md:min-h-[500px] w-[300px] md:w-[310px] flex flex-col items-center ">
                   <div className="relative w-full rounded-lg h-1/2 ">
                     <Image
                       src={item.image[0]}
