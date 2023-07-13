@@ -75,11 +75,13 @@ function Navbar() {
               </Link>
             )}
           </li>
-          <Link href="/cart">
-            <li className="px-3 py-1 bg-orange-400 rounded-full">
-              {cart.length}
-            </li>
-          </Link>
+          {user && (
+            <Link href="/cart">
+              <li className="px-3 py-1 bg-orange-400 rounded-full">
+                {cart.length}
+              </li>
+            </Link>
+          )}
         </ul>
       </div>
     </div>

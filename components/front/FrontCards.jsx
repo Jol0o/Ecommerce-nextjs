@@ -39,7 +39,7 @@ function FrontCards() {
         <div className="grid items-center justify-center w-full gap-2 my-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] place-items-center  md:gap-4">
           {product.slice(0, 4).map((item) => {
             return (
-              <Link href="/product">
+              <Link href="/product" key={item}>
                 <div className="h-[400px] mt-3 md:mt-0 md:h-[500px] w-[300px] md:w-[310px] flex flex-col items-center ">
                   <div className="relative w-full rounded-lg h-1/2 ">
                     <Image
@@ -47,7 +47,7 @@ function FrontCards() {
                       alt={item.name}
                       height={1000}
                       width={1000}
-                      className="object-contain bg-gray-100 rounded-lg min-h-[350px]"
+                      className="object-contain rounded-lg min-h-[350px]"
                     />
                   </div>
                   <div className="flex flex-col w-full my-4 text-clip">
